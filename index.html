@@ -1,66 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <style>
-        body {
-            background-color: #f4f7fc;
-            font-family: 'Arial', sans-serif;
-        }
-        .navbar {
-            background-color: #007bff;
-        }
-        .navbar a {
-            color: white !important;
-        }
-        .hero {
-            background-color: #007bff;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        .section {
-            padding: 60px 0;
-        }
-        .card {
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-    </style>
+    <title>Vikas GM | Interactive QA Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Cherry Blossom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Floating Pill Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4 text-dark" href="#">Vikas GM<span
+                    style="color: var(--sakura-pink);">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="d-flex align-items-center justify-content-center mx-auto my-auto">
+                <p id="typing-text" class="typing-text fw-semibold mb-0"></p>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#qa-corner">QA Corner 🐞</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -69,48 +39,69 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Hi, I'm Vikas</h1>
-            <p>Welcome to my personal portfolio!</p>
-            <a href="#about" class="btn btn-light btn-lg">Learn More About Me</a>
+            <h1 class="mb-3">Hi, I'm Vikas GM 🌸</h1>
+            <p class="lead mx-auto text-muted max-w-600">Combining full-stack web understanding with software testing
+                principles<br> to inspect, verify, and deliver quality applications.</p>
+            <div class="mt-4">
+                <a href="#projects" class="btn btn-sakura btn-lg rounded-pill me-2 px-4">View Projects 🚀</a>
+                <a href="#contact" class="btn btn-outline-sakura btn-lg rounded-pill px-4">Contact Me 📩</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="py-5">
         <div class="container text-center">
-            <h2>About Me</h2>
-            <p>I am a passionate web developer with a love for building interactive websites and applications.</p>
-            <img src="me.jpg" alt="Your Photo" class="rounded-circle" width="200">
+            <h2 class="fw-bold mb-4">About Me 🌸</h2>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="me.jpg" alt="Vikas GM" class="rounded-circle profile-img" width="200" height="200"
+                        style="object-fit: cover;">
+                </div>
+                <div class="col-md-7 text-md-start">
+                    <p class="lead">
+                        I am a <strong>BCA Graduate</strong> with hands-on project experience in Full Stack Web
+                        Development and Software Testing.
+                    </p>
+                    <p class="text-muted">
+                        I understand how web architectures run under the hood! By combining core development knowledge
+                        (HTML/CSS/JS) with modern <strong>AI-assisted workflows</strong>, I inspect DOM elements,
+                        quickly
+                        test UI concepts, and write clean test scenarios to verify both front-end features and backend
+                        databases 💡🛠️
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section bg-light">
+    <section id="skills" class="py-5">
         <div class="container text-center">
-            <h2>Skills</h2>
-            <div class="row">
+            <h2 class="fw-bold mb-5">Technical Skillset 🛠️</h2>
+            <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">HTML</h5>
-                            <p class="card-text">I have experience with semantic HTML and creating accessible, well-structured web pages.</p>
-                        </div>
+                    <div class="custom-card p-4">
+                        <div class="fs-1 mb-2">🔍</div>
+                        <h5 class="fw-bold" style="color: var(--sakura-pink);">Software Testing & QA</h5>
+                        <p class="small">SDLC & STLC concepts, Manual Testing, Test Case Design, Functional & System
+                            Testing, Edge Case & Bug Life Cycle.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">CSS</h5>
-                            <p class="card-text">I am proficient in CSS, creating responsive layouts and animations using Flexbox, Grid, and media queries.</p>
-                        </div>
+                    <div class="custom-card p-4">
+                        <div class="fs-1 mb-2">🌐</div>
+                        <h5 class="fw-bold" style="color: var(--sakura-pink);">Web Architecture</h5>
+                        <p class="small">HTML5, CSS3, Bootstrap, DOM Inspection, JavaScript logic, Cross-Browser
+                            Functionality, and AI-assisted debugging.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">JavaScript</h5>
-                            <p class="card-text">I write clean, efficient JavaScript for adding interactivity and dynamic behavior to websites.</p>
-                        </div>
+                    <div class="custom-card p-4">
+                        <div class="fs-1 mb-2">🗄️</div>
+                        <h5 class="fw-bold" style="color: var(--sakura-pink);">Database & Tools</h5>
+                        <p class="small">Oracle SQL & MySQL database checks, CRUD Operations, XAMPP Server setup,
+                            Git/GitHub version control.</p>
                     </div>
                 </div>
             </div>
@@ -118,57 +109,144 @@
     </section>
 
     <!-- Projects Section -->
-    <!-- <section id="projects" class="section">
+    <section id="projects" class="py-5">
         <div class="container text-center">
-            <h2>Projects</h2>
-            <div class="row">
+            <h2 class="fw-bold mb-5">Featured Projects 💻</h2>
+            <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">A brief description of the project. It's a web application built with HTML, CSS, and JavaScript.</p>
+                    <div class="custom-card p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge mb-2" style="background: var(--soft-rose); color: #0f0d13;">QA
+                                Project</span>
+                            <h5 class="fw-bold">SauceDemo E-Commerce Test Suite</h5>
+                            <p class="small">A comprehensive manual test suite covering 25 functional, boundary, and
+                                edge-case test scenarios for the SauceDemo e-commerce platform. Focuses on login
+                                validation, cart management, and checkout workflows..</p>
                         </div>
+                        <span class="badge border"
+                            style="border-color: var(--sakura-pink) !important; color: var(--text-dark) !important;">Tech:
+                            Test Case Design, Excel, GitHub</span>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">A brief description of the project. It's a web application built with HTML, CSS, and JavaScript.</p>
+                    <div class="custom-card p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge mb-2" style="background: var(--soft-rose); color: #0f0d13;">Final Year
+                                Project</span>
+                            <h5 class="fw-bold">Online Grocery App</h5>
+                            <p class="small">A responsive e-commerce web interface designed for seamless online grocery
+                                shopping. Features a clean product catalog with item categorization, dynamic cart
+                                interactions, and structured layout components for an intuitive user experience across
+                                devices</p>
                         </div>
+                        <span class="badge border"
+                            style="border-color: var(--sakura-pink) !important; color: var(--text-dark) !important;">Tech:
+                            HTML, CSS, JS, SQL, XAMPP</span>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="project3.jpg" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">A brief description of the project. It's a web application built with HTML, CSS, and JavaScript.</p>
+                    <div class="custom-card p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge mb-2" style="background: var(--soft-rose); color: #0f0d13;">Internship
+                                Project</span>
+                            <h5 class="fw-bold">IMDb Clone Platform</h5>
+                            <p class="small">A dynamic movie discovery web application built to test DOM manipulation
+                                and interactive UI elements. Focuses on rendering structured media datasets, and
+                                verifying responsive layout behavior under varying
+                                screen sizes.</p>
                         </div>
+                        <span class="badge border"
+                            style="border-color: var(--sakura-pink) !important; color: var(--text-dark) !important;">Tech:
+                            HTML, CSS, JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-3 d-flex justify-content-center">
+                <div class="col-md-4">
+                    <div class="custom-card p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge mb-2" style="background: var(--soft-rose); color: #0f0d13;">Internship
+                                Project</span>
+                            <h5 class="fw-bold">Dynamic To-Do Manager</h5>
+                            <p class="small">Developed a productivity-focused To-Do application that enables users to
+                                create, update, delete, and manage tasks while implementing real-time DOM updates,
+                                responsive user interactions, for a seamless user experience.</p>
+                        </div>
+                        <span class="badge border"
+                            style="border-color: var(--sakura-pink) !important; color: var(--text-dark) !important;">Tech:
+                            HTML, CSS, JavaScript</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+
+    <!-- Interactive QA Section Header -->
+    <section id="qa-corner" class="py-5 text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Defect Life Cycle Challenge 🎮🐞</h2>
+            <p class="text-muted mb-4">Launch the interactive QA simulator to squash defects in real-time!</p>
+
+            <!-- Game Launcher Card -->
+            <div class="custom-card p-4 mx-auto max-w-600 text-center">
+                <div class="fs-1 mb-2">🐞</div>
+                <h4 class="fw-bold" style="color: var(--sakura-pink);">Jira Bug Tracking Simulator</h4>
+                <p class="small">Test your QA speed across the full Defect Life Cycle in a floating modal interface.</p>
+                <button id="launch-game-btn" class="btn btn-sakura rounded-pill px-4 mt-2">Start Bug Hunt 🚀</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Glass Game Modal -->
+    <div id="game-modal-overlay" class="game-modal-overlay">
+        <div class="game-modal-card">
+            <!-- Close Button (X) -->
+            <button id="close-modal-btn" class="modal-close-btn">&times;</button>
+
+            <h4 class="fw-bold mb-1" style="color: var(--text-dark);">QA Defect Simulator 🐞</h4>
+            <p id="bug-status" class="badge rounded-pill bg-primary px-3 py-2 fs-6 mb-3">STATUS: OPEN</p>
+
+            <!-- Game Play Arena -->
+            <div class="game-arena">
+                <div id="bug-btn" class="bug-icon">🐞</div>
+            </div>
+
+            <!-- Timed Toast Popup Notification -->
+            <div id="game-toast" class="game-toast">
+                <span id="toast-msg">Bug Logged in Jira!</span>
+            </div>
+
+            <div class="mt-3">
+                <button id="replay-btn" class="btn btn-sakura rounded-pill px-4" style="display: none;">Replay Bug Hunt
+                    🔄</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
+    <section id="contact" class="py-5">
         <div class="container text-center">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, feel free to reach out to me via email or social media!</p>
-            <a href="mailto:vikasgm1776@gmail.com" class="btn btn-primary">Email Me</a>
+            <h2 class="fw-bold mb-3">Let's Connect 🤝</h2>
+            <p class="mb-4 text-muted">Open for Software Testing / QA Engineer opportunities!</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="mailto:vikasgm1776@gmail.com" class="btn btn-sakura btn-lg rounded-pill px-4">Email Me 📧</a>
+                <a href="https://www.linkedin.com/in/vikas-vikas-18919a370" target="_blank"
+                    class="btn btn-outline-sakura btn-lg rounded-pill px-4">LinkedIn Profile 💼</a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Vikas. All rights reserved.</p>
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2026 Vikas GM. Built with Bootstrap, JavaScript & AI Fluency 🌸⚡</p>
+        </div>
     </footer>
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
+
 </html>
