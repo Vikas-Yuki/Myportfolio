@@ -352,7 +352,7 @@ body::before {
         width: auto !important;
         margin: 0 !important;
         padding: 0 4px !important;
-        font-size: 14px !important;
+        font-size: 9px !important;
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
