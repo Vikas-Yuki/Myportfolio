@@ -11,14 +11,21 @@ section {
 
 /* 60-30-10 Tech Color Palette Rule */
 :root {
-    --bg-light: #f8fafc;        /* 60% Base Background: Slate 50 */
-    --card-bg: #ffffff;          /* Pure Crisp White */
-    --primary-blue: #2563eb;     /* 10% Accent Focus: Electric Sapphire Blue */
-    --primary-hover: #1d4ed8;    /* Darker Blue Hover State */
+    --bg-light: #f8fafc;
+    /* 60% Base Background: Slate 50 */
+    --card-bg: #ffffff;
+    /* Pure Crisp White */
+    --primary-blue: #2563eb;
+    /* 10% Accent Focus: Electric Sapphire Blue */
+    --primary-hover: #1d4ed8;
+    /* Darker Blue Hover State */
     --blue-glow: rgba(37, 99, 235, 0.2);
-    --text-dark: #0f172a;       /* 30% Secondary Structure: Deep Navy Slate */
-    --text-muted: #475569;      /* Cool Slate Gray */
-    --border-light: #e2e8f0;    /* Subtle Neutral Border */
+    --text-dark: #0f172a;
+    /* 30% Secondary Structure: Deep Navy Slate */
+    --text-muted: #475569;
+    /* Cool Slate Gray */
+    --border-light: #e2e8f0;
+    /* Subtle Neutral Border */
 }
 
 body {
@@ -62,10 +69,10 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 85px; 
-    background: var(--bg-light); 
-    z-index: 9990; 
-    pointer-events: none; 
+    height: 85px;
+    background: var(--bg-light);
+    z-index: 9990;
+    pointer-events: none;
 }
 
 /* Hero Section */
@@ -82,7 +89,7 @@ body::before {
 }
 
 .typing-text {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     color: var(--primary-blue);
     margin-left: 90px;
     display: inline-block;
@@ -161,7 +168,7 @@ body::before {
 
 /* State when expanded */
 .more-skills.expanded {
-    max-height: 200px; 
+    max-height: 200px;
     opacity: 1;
 }
 
@@ -234,8 +241,15 @@ body::before {
 }
 
 @keyframes popIn {
-    0% { transform: scale(0.9); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .modal-close-btn {
@@ -382,7 +396,25 @@ body::before {
     .HeroSec2 {
         display: none !important;
     }
-    #about,#contact,#projects,#qa-corner,#skills{
+
+    #about,
+    #contact,
+    #projects,
+    #qa-corner{
         margin-top: -45px;
+    }
+
+    .text-hide {
+        display: none;
+    }
+
+    #skills {
+        margin-top: -20px;
+    }
+
+    .mobile-text::after {
+        content: "Aspirant BCA Graduate with hands-on project experience, I Combine full stack web Development knowledge with Software Testing principles to analyze, validate and deliver quality applications.";
+        color: #0f172a;
+        margin-bottom: 10px;
     }
 }
