@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vikas GM | QA & Software Testing Engineer</title>
+    <title>Vikas GM Portfolio</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom Tech Professional CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,7 +16,7 @@
     <!-- Floating Pill Navbar -->
     <nav class="navbar navbar-expand-lg px-3">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold fs-4 text-dark" href="#">Vikas GM<span
+            <a class="navbar-brand fw-bold fs-4 text-dark" href="#">Vikas<span
                     style="color: var(--primary-blue);">.</span></a>
             <span id="typing-text" class="typing-text desktop-typing fw-semibold"></span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -37,9 +37,10 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
+            <h3 class="fw-semibold mt-1">Hi, I'm</h3>
             <h1 class="mb-3 fw-bold">Vikas GM</h1>
             <p class="lead mx-auto text-muted max-w-600">
-                BCA Graduate with foundational skills in Software Testing concepts, Manual QA, and Web Technologies.
+                Combining full stack web Understanding with Software Testing principles <br>to inspect, Verify and deliver quality applications.
             </p>
             <div class="HeroSec2 mt-4">
                 <a href="#projects" class="btn btn-primary-tech btn-lg rounded-pill me-2 px-4">View Projects</a>
@@ -50,16 +51,16 @@
 
     <!-- About Section -->
     <section id="about" class="py-2">
-        <div class="container text-center">
+        <div class="container text-center mt-3">
             <h2 class="fw-bold mb-4">About</h2>
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <img src="me.jpg" alt="Vikas GM" class="rounded-circle profile-img" width="200" height="200"
+                    <img src="./me3.jpeg" alt="Vikas GM" class="rounded-circle profile-img" width="200" height="200"
                         style="object-fit: cover;">
                 </div>
                 <div class="col-md-7 text-md-start">
                     <p class="lead fw-semibold text-dark">
-                        BCA Graduate with hands-on project experience in Software Testing, Test Case Execution, and Web
+                        Aspirant BCA Graduate with hands-on project experience in Software Testing, Test Case Execution, and Web
                         Application Architecture.
                     </p>
                     <p class="text-muted">
@@ -79,37 +80,72 @@
         <div class="container text-center">
             <h2 class="fw-bold mb-5">Technical Competencies</h2>
             <!-- Skills Section snippet to replace inside <section id="skills"> -->
-            <div class="row g-4">
+            <!-- Skills Section snippet -->
+            <!-- Change your row class to this -->
+            <div class="row g-4 align-items-start">
                 <!-- Card 1: Software Testing -->
                 <div class="col-md-4">
-                    <div class="custom-card p-4 text-center">
-                        <i class="bi bi-search text-primary fs-2 mb-3"></i>
-                        <h3 class="h5 fw-bold text-primary">Software Testing & QA</h3>
-                        <p class="small text-muted mb-0">
-                            SDLC & STLC Frameworks, Manual Testing, Test Case Design, Defect Lifecycle
-                        </p>
+                    <div class="custom-card p-4">
+                        <div class="text-center mb-3">
+                            <i class="bi bi-patch-check text-primary fs-2"></i>
+                            <h3 class="h5 fw-bold text-primary mt-2">Software Testing & QA</h3>
+                        </div>
+                        <ul class="list-unstyled skill-list mb-2">
+                            <li><i class="bi bi-check2 text-primary me-2"></i>SDLC & STLC</li>
+                            <li><i class="bi bi-check2 text-primary me-2"></i>Manual Testing</li>
+                            <li><i class="bi bi-check2 text-primary me-2"></i>Test Case Design</li>
+                            <div class="more-skills">
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Functional Testing</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Smoke & Sanity Testing</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Defect Lifecycle & Bug Reporting</li>
+                            </div>
+                        </ul>
+                        <button class="btn btn-link btn-sm text-decoration-none p-0 toggle-skills-btn">More <i
+                                class="bi bi-chevron-down"></i></button>
                     </div>
                 </div>
 
-                <!-- Card 2: Web Fundamentals -->
+                <!-- Card 2: Web Technologies -->
                 <div class="col-md-4">
-                    <div class="custom-card p-4 text-center">
-                        <i class="bi bi-globe text-primary fs-2 mb-3"></i>
-                        <h3 class="h5 fw-bold text-primary">Web Technologies</h3>
-                        <p class="small text-muted mb-0">
-                            HTML5, CSS3, Bootstrap, JavaScript Basics, DOM Inspection
-                        </p>
+                    <div class="custom-card p-4">
+                        <div class="text-center mb-3">
+                            <i class="bi bi-globe text-primary fs-2"></i>
+                            <h3 class="h5 fw-bold text-primary mt-2">Web Technologies</h3>
+                        </div>
+                        <ul class="list-unstyled skill-list mb-2">
+                            <li><i class="bi bi-check2 text-primary me-2"></i>HTML5</li>
+                            <li><i class="bi bi-check2 text-primary me-2"></i>CSS3</li>
+                            <li><i class="bi bi-check2 text-primary me-2"></i>Bootstrap 5</li>
+                            <div class="more-skills">
+                                <li><i class="bi bi-check2 text-primary me-2"></i>JavaScript (Basics)</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>DOM Inspection</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Responsive Design</li>
+                            </div>
+                        </ul>
+                        <button class="btn btn-link btn-sm text-decoration-none p-0 toggle-skills-btn">More <i
+                                class="bi bi-chevron-down"></i></button>
                     </div>
                 </div>
 
-                <!-- Card 3: Database & Tools -->
+                <!-- Card 3: Database & SQL -->
                 <div class="col-md-4">
-                    <div class="custom-card p-4 text-center">
-                        <i class="bi bi-database text-primary fs-2 mb-3"></i>
-                        <h3 class="h5 fw-bold text-primary">Database & SQL</h3>
-                        <p class="small text-muted mb-0">
-                            Oracle SQL, MySQL Queries, Basic CRUD Operations, Data Verification
-                        </p>
+                    <div class="custom-card p-4">
+                        <div class="text-center mb-3">
+                            <i class="bi bi-database text-primary fs-2"></i>
+                            <h3 class="h5 fw-bold text-primary mt-2">Database & SQL</h3>
+                        </div>
+                        <ul class="list-unstyled skill-list mb-2">
+                            <li><i class="bi bi-check2 text-primary me-2"></i>Oracle SQL</li>
+                            <li><i class="bi bi-check2 text-primary me-2"></i>MySQL</li>
+                            <li><i class="bi bi-check2 text-primary me-2"></i>Joins (INNER, LEFT, RIGHT)</li>
+                            <div class="more-skills">
+                                <li><i class="bi bi-check2 text-primary me-2"></i>CRUD Operations</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Data Validation</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Database Verification</li>
+                            </div>
+                        </ul>
+                        <button class="btn btn-link btn-sm text-decoration-none p-0 toggle-skills-btn">More <i
+                                class="bi bi-chevron-down"></i></button>
                     </div>
                 </div>
             </div>
@@ -120,55 +156,108 @@
     <section id="projects" class="py-5">
         <div class="container text-center">
             <h2 class="fw-bold mb-5">Featured Projects</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="custom-card p-4 d-flex flex-column justify-content-between">
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Project 1: SauceDemo Test Suite -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="custom-card p-4 d-flex flex-column justify-content-between h-100">
                         <div>
-                            <span class="badge tech-badge mb-3">QA & Testing</span>
-                            <h5 class="fw-bold text-dark">SauceDemo E-Commerce Test Suite</h5>
-                            <p class="small text-muted">Manual test suite covering 25+ functional, boundary, and
-                                edge-case scenarios for the SauceDemo e-commerce platform, including authentication,
-                                cart, and checkout flows.</p>
+                            <span class="badge bg-light text-primary border mb-3">QA & Testing</span>
+                            <h3 class="h5 fw-bold text-dark">SauceDemo E-Commerce Test Suite</h3>
+                            <p class="small text-muted">
+                                Comprehensive manual test suite covering 20+ functional, boundary, and edge-case
+                                scenarios for SauceDemo e-commerce platform. Includes end-to-end verification of
+                                user authentication, cart calculations, and checkout flows.
+                            </p>
                         </div>
-                        <span class="badge tech-outline-badge text-wrap">Tech: Test Case Design, Excel, GitHub</span>
+
+                        <!-- Action Buttons -->
+                        <div class="d-flex justify-content-center gap-2 mt-1">
+                            <a href="https://github.com/Vikas-Yuki/SauceDemo-Manual-Testing-Suite/blob/main/SauceDemo_Manual_Test_Suite.csv"
+                                class="btn btn-primary-tech btn-sm px-3 rounded-pill">
+                                <i class="bi bi-file-earmark-text-fill me-1"></i> View Test Cases
+                            </a>
+                            <a href="https://github.com/Vikas-Yuki/SauceDemo-Manual-Testing-Suite"
+                                class="btn btn-outline-tech btn-sm px-3 rounded-pill">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="custom-card p-4 d-flex flex-column justify-content-between">
+
+                <!-- Project 2: Online Grocery Application -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="custom-card p-4 d-flex flex-column justify-content-between h-100">
                         <div>
-                            <span class="badge tech-badge mb-3">Full-Stack Application</span>
-                            <h5 class="fw-bold text-dark">Online Grocery Application</h5>
-                            <p class="small text-muted">A responsive e-commerce web Application for seamless product
-                                browsing, Card management, And order processing. Includes dynamic catalog, User
-                                authentication, And database-backend CRUD operation </p>
+                            <span class="badge bg-light text-primary border mb-3">Full-Stack Application</span>
+                            <h3 class="h5 fw-bold text-dark">Online Grocery Application</h3>
+                            <p class="small text-muted">
+                                A responsive e-commerce web application designed for seamless product browsing, cart
+                                management, and order processing. Includes dynamic catalog, user authentication, and
+                                database-backed CRUD operations.
+                            </p>
                         </div>
-                        <span class="badge tech-outline-badge text-wrap">Tech: HTML, CSS, JS, SQL, XAMPP</span>
+
+                        <!-- Action Buttons -->
+                        <div class="d-flex justify-content-center gap-2 mt-3">
+                            <a href="https://github.com/Vikas-Yuki/QuickBasket"
+                                class="btn btn-primary-tech btn-sm px-3 rounded-pill">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> View Project
+                            </a>
+                            <a href="https://github.com/Vikas-Yuki/QuickBasket"
+                                class="btn btn-outline-tech btn-sm px-3 rounded-pill">
+                                <i class="bi bi-github me-1"></i> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="custom-card p-4 d-flex flex-column justify-content-between">
+
+                <!-- Project 3: IMDb Media Explorer -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="custom-card p-4 d-flex flex-column justify-content-between h-100">
                         <div>
-                            <span class="badge tech-badge mb-3">Frontend Architecture</span>
-                            <h5 class="fw-bold text-dark">IMDb Media Discovery Platform</h5>
-                            <p class="small text-muted"> Dynamic web application that interacts with IMDB API to search
-                                movies and display details. Implemented responsive UI, DOM Manipulation, And API
-                                integration for smooth user experience.</p>
+                            <span class="badge bg-light text-primary border mb-3">Frontend Architecture</span>
+                            <h3 class="h5 fw-bold text-dark">IMDb Media Explorer</h3>
+                            <p class="small text-muted">
+                                Dynamic web application that interacts with the IMDb API to search movies and display
+                                details. Implemented responsive UI, DOM manipulation, and API integration for a smooth
+                                user experience.
+                            </p>
                         </div>
-                        <span class="badge tech-outline-badge text-wrap">Tech: HTML5, CSS3, JavaScript</span>
+
+                        <!-- Action Buttons -->
+                        <div class="d-flex justify-content-center gap-2 mt-3">
+                            <a href="https://vikas-yuki.github.io/IMDb-Clone/"
+                                class="btn btn-primary-tech btn-sm px-3 rounded-pill">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> View Project
+                            </a>
+                            <a href="https://github.com/Vikas-Yuki/IMDb-Clone"
+                                class="btn btn-outline-tech btn-sm px-3 rounded-pill">
+                                <i class="bi bi-github me-1"></i> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row g-4 mt-3 d-flex justify-content-center">
-                <div class="col-md-4">
-                    <div class="custom-card p-4 d-flex flex-column justify-content-between">
+
+                <!-- Project 4: Jira Defect Tracking Sandbox -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="custom-card p-4 d-flex flex-column justify-content-between h-100">
                         <div>
-                            <span class="badge tech-badge mb-3">Web Utility</span>
-                            <h5 class="fw-bold text-dark">Dynamic Task Manager</h5>
-                            <p class="small text-muted">Productivity-focused web application enabling real-time task
-                                lifecycle execution (Create, Read, Update, Delete) with persistent DOM interactions and
-                                responsive validation.</p>
+                            <span class="badge bg-light text-primary border mb-3">QA Sandbox</span>
+                            <h3 class="h5 fw-bold text-dark">Jira Defect Tracking Sandbox</h3>
+                            <p class="small text-muted">
+                                Interactive defect lifecycle simulator that mimics real-world bug tracking processes.
+                                Demonstrates bug creation, status transitions, and resolution workflow similar to Jira.
+                            </p>
                         </div>
-                        <span class="badge tech-outline-badge text-wrap">Tech: HTML5, CSS3, JavaScript</span>
+
+                        <!-- Action Buttons -->
+                        <div class="d-flex justify-content-center gap-2 mt-3">
+                            <a href="#qa-corner" class="btn btn-primary-tech btn-sm px-3 rounded-pill">
+                                <i class="bi bi-play-circle-fill me-1"></i> Launch Sandbox
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,20 +265,22 @@
     </section>
 
     <!-- Interactive QA Section Header -->
-    <section id="qa-corner" class="py-5 text-center">
+    <section id="qa-corner" class="py-5">
         <div class="container">
-            <h2 class="fw-bold mb-3">Defect Lifecycle Simulation</h2>
-            <p class="text-muted mb-4">Interactive Quality Assurance Sandbox demonstrating real-time bug triage and
-                resolution state logic.</p>
-
-            <!-- Game Launcher Card -->
-            <div class="custom-card p-4 mx-auto max-w-600 text-center">
-                <div class="fs-1 mb-2">⚙️</div>
-                <h4 class="fw-bold" style="color: var(--primary-blue);">Jira Defect Tracking Sandbox</h4>
-                <p class="small text-muted">Simulate the Defect Lifecycle by launching an interactive testing
-                    environment.</p>
-                <button id="launch-game-btn" class="btn btn-primary-tech rounded-pill px-4 mt-2">Launch QA
-                    Sandbox</button>
+            <h2 class="fw-bold mb-4 text-center">QA Sandbox</h2>
+            <div class="row justify-content-center">
+                <!-- Constraining width here so it doesn't stretch too long -->
+                <div class="col-md-8 col-lg-6">
+                    <div class="custom-card p-4 text-center">
+                        <h3 class="h5 fw-bold mb-2">Defect Lifecycle Simulation</h3>
+                        <p class="small text-muted mb-3">
+                            Simulate the Defect Lifecycle by launching an interactive testing environment.
+                        </p>
+                        <button id="launch-game-btn" class="btn btn-primary-tech rounded-pill px-4">
+                            <i class="bi bi-box-arrow-up-right me-1"></i> Launch QA Sandbox
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -221,10 +312,12 @@
     </div>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-3">
         <div class="container text-center">
             <h2 class="fw-bold mb-3">Contact</h2>
-            <p class="mb-4 text-muted">Open to Software Testing, Quality Assurance, and Web Development Roles.</p>
+            <p class="mb-2 text-muted">Open to <strong>Software Testing</strong> and <strong>Quality Assurance
+                    Roles.</strong></p>
+            <p class="mb-4 text-muted"> Let's connect and discuss how can I Contribute to your team and add value.</p>
             <div class="d-flex justify-content-center gap-3">
                 <a href="mailto:vikasgm1776@gmail.com" class="btn btn-primary-tech btn-lg rounded-pill px-4">Email</a>
                 <a href="https://www.linkedin.com/in/vikas-vikas-18919a370" target="_blank"

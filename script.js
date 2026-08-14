@@ -35,7 +35,26 @@ document.addEventListener('DOMContentLoaded', () => {
     typingElement.textContent = roles[0];
     setInterval(changeRole, 3000);
 
-    // 2. QA Game Engine with Modal & Timed Toasts
+    //2. Toggle 'More/Less' skills expander
+    document.querySelectorAll('.toggle-skills-btn').forEach(button => {
+        button.addEventListener('click', (e) => {
+            // Find the specific card parent
+            const card = e.target.closest('.custom-card');
+            const moreSkills = card.querySelector('.more-skills');
+
+            // Toggle the expanded class
+            moreSkills.classList.toggle('expanded');
+
+            // Update button text & icon
+            if (moreSkills.classList.contains('expanded')) {
+                button.innerHTML = 'Less <i class="bi bi-chevron-up"></i>';
+            } else {
+                button.innerHTML = 'More <i class="bi bi-chevron-down"></i>';
+            }
+        });
+    });
+
+    // 3. QA Game Engine with Modal & Timed Toasts
     const launchBtn = document.getElementById('launch-game-btn');
     const closeModalBtn = document.getElementById('close-modal-btn');
     const modalOverlay = document.getElementById('game-modal-overlay');

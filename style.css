@@ -136,12 +136,33 @@ body::before {
 
 /* Professional Tech Badges */
 .tech-badge {
-    background-color: #dbeafe !important;
-    color: var(--primary-blue) !important;
+    background-color: #edf2f7;
+    color: var(--primary-blue);
+    font-size: 0.75rem;
     font-weight: 600;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 0.78rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+/* Skills list styling */
+.skill-list li {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+}
+
+/* Smooth expand animation for skills */
+.more-skills {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* State when expanded */
+.more-skills.expanded {
+    max-height: 200px; 
+    opacity: 1;
 }
 
 .tech-outline-badge {
@@ -360,5 +381,8 @@ body::before {
 
     .HeroSec2 {
         display: none !important;
+    }
+    #about,#contact,#projects,#qa-corner,#skills{
+        margin-top: -45px;
     }
 }
