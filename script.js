@@ -2,39 +2,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Interactive Dynamic Typing Effect in Hero
     const roles = [
-    "BCA Graduate 🎓",
-    "Software Testing Aspirant 🐞",
-    "AI-Assisted Web Builder ⚡",
-    "SQL & Database Enthusiast 📊"
-];
+        "BCA Graduate",
+        "Aspiring QA Engineer",
+        " AI assisted web builder",
+        "Database Systems & SQL"
+    ];
 
-let roleIndex = 0;
-const typingElement = document.querySelector('.typing-text');
+    let roleIndex = 0;
+    const typingElement = document.querySelector('.typing-text');
 
-function changeRole() {
-    // Slide current text upward
-    typingElement.classList.add('slide-out');
-
-    setTimeout(() => {
-        roleIndex = (roleIndex + 1) % roles.length;
-
-        // Change text
-        typingElement.textContent = roles[roleIndex];
-
-        // Start from below
-        typingElement.classList.remove('slide-out');
-        typingElement.classList.add('slide-in');
+    function changeRole() {
+        // Slide current text upward
+        typingElement.classList.add('slide-out');
 
         setTimeout(() => {
-            typingElement.classList.remove('slide-in');
+            roleIndex = (roleIndex + 1) % roles.length;
+
+            // Change text
+            typingElement.textContent = roles[roleIndex];
+
+            // Start from below
+            typingElement.classList.remove('slide-out');
+            typingElement.classList.add('slide-in');
+
+            setTimeout(() => {
+                typingElement.classList.remove('slide-in');
+            }, 600);
+
         }, 600);
+    }
 
-    }, 600);
-}
-
-typingElement.textContent = roles[0];
-
-setInterval(changeRole, 3000);
+    typingElement.textContent = roles[0];
+    setInterval(changeRole, 3000);
 
     // 2. QA Game Engine with Modal & Timed Toasts
     const launchBtn = document.getElementById('launch-game-btn');
@@ -48,16 +47,16 @@ setInterval(changeRole, 3000);
     const replayBtn = document.getElementById('replay-btn');
 
     const defectLifeCycle = [
-        { status: "STATUS: NEW 📝", toast: "Bug Logged in Jira!" },
-        { status: "STATUS: ASSIGNED 👨‍💻", toast: "Developer Assigned!" },
-        { status: "STATUS: FIXED 🧪", toast: "Code Patched! Run Retest." },
-        { status: "STATUS: VERIFIED ✅", toast: "Test Passed! Ready to Close." }
+        { status: "STATUS: NEW", toast: "Defect Logged in JIRA System" },
+        { status: "STATUS: ASSIGNED", toast: "Assigned to Engineering Lead" },
+        { status: "STATUS: FIXED", toast: "Patch Deployed — Retest Required" },
+        { status: "STATUS: VERIFIED", toast: "Verification Passed — Ready to Close" }
     ];
 
     let currentStep = 0;
     let toastTimeout;
 
-    // 1. Open & Close Modal Controls
+    // Open & Close Modal Controls
     launchBtn.addEventListener('click', () => {
         modalOverlay.style.display = 'flex';
         resetGame();
@@ -67,7 +66,7 @@ setInterval(changeRole, 3000);
         modalOverlay.style.display = 'none';
     });
 
-    // 2. Helper Function to Trigger 1.5s Pop-Up Toast
+    // Helper Function to Trigger Pop-Up Toast
     function showToast(text) {
         toastMsg.textContent = text;
         gameToast.classList.add('show');
@@ -78,7 +77,7 @@ setInterval(changeRole, 3000);
         }, 1500);
     }
 
-    // 3. Move Bug inside Arena Bounds
+    // Move Bug inside Arena Bounds
     function moveBugInsideArena() {
         const arena = document.querySelector('.game-arena');
         const maxX = arena.clientWidth - 60;
@@ -91,7 +90,7 @@ setInterval(changeRole, 3000);
         bugBtn.style.top = `${randomY}px`;
     }
 
-    // 4. Bug Click Handler
+    // Bug Click Handler
     bugBtn.addEventListener('click', () => {
         if (currentStep < defectLifeCycle.length) {
             bugStatus.textContent = defectLifeCycle[currentStep].status;
@@ -99,8 +98,8 @@ setInterval(changeRole, 3000);
             moveBugInsideArena();
             currentStep++;
         } else {
-            bugStatus.textContent = "STATUS: CLOSED 🏆";
-            showToast("Defect Life Cycle Complete! 🎉");
+            bugStatus.textContent = "STATUS: CLOSED";
+            showToast("Defect Lifecycle Completed Successfully");
 
             bugBtn.style.transform = 'scale(0) rotate(180deg)';
             setTimeout(() => {
@@ -110,12 +109,12 @@ setInterval(changeRole, 3000);
         }
     });
 
-    // 5. Reset Game Function
+    // Reset Game Function
     function resetGame() {
         currentStep = 0;
         bugBtn.style.display = 'block';
         bugBtn.style.transform = 'scale(1)';
-        bugStatus.textContent = "STATUS: OPEN 🐞";
+        bugStatus.textContent = "STATUS: OPEN";
         replayBtn.style.display = 'none';
         gameToast.classList.remove('show');
         moveBugInsideArena();
@@ -130,11 +129,9 @@ const menuCollapse = document.getElementById('navbarNav');
 
 navLinks.forEach((link) => {
     link.addEventListener('click', () => {
-        // Check if mobile menu is currently expanded
         if (menuCollapse.classList.contains('show')) {
             const bsCollapse = new bootstrap.Collapse(menuCollapse, { toggle: false });
             bsCollapse.hide();
         }
     });
 });
-
