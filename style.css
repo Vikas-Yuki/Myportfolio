@@ -399,9 +399,9 @@ body::before {
 
     #about,
     #contact,
-    #projects,
-    #qa-corner{
+    #projects{
         margin-top: -45px;
+        padding-top: 10px;
     }
 
     .text-hide {
@@ -410,6 +410,9 @@ body::before {
 
     #skills {
         margin-top: -20px;
+    }
+    #qa-corner{
+        margin-top: -65px;
     }
 
     .mobile-text::after {
