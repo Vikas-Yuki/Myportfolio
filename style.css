@@ -399,7 +399,7 @@ body::before {
 
     #about,
     #contact,
-    #projects{
+    #projects {
         margin-top: -45px;
         padding-top: 10px;
     }
@@ -411,12 +411,14 @@ body::before {
     #skills {
         margin-top: -20px;
     }
-    #qa-corner{
+
+    #qa-corner {
         margin-top: -65px;
     }
 
     .mobile-text::after {
-        content: "Aspirant BCA Graduate with hands-on project experience, I Combine full stack web Development knowledge with Software Testing principles to analyze, validate and deliver quality applications.";
+        content: "BCA Graduate aspiring to become a QA Engineer, with hands-on knowledge of software testing and web development.\A I use my technical knowledge and AI-assisted workflows to analyze, validate, and improve application quality.";
+        white-space: pre-wrap;
         color: #0f172a;
         margin-bottom: 10px;
     }

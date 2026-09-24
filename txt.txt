@@ -1,7 +1,0 @@
-span class="badge tech-badge mb-3">Full-Stack Application</span>
-                            <h5 class="fw-bold text-dark">Online Grocery Application</h5>
-                            <p class="small text-muted">A responsive e-commerce web Application for seamless product
-                                browsing, Card management, And order processing. Includes dynamic catalog, User
-                                authentication, And database-backend CRUD operation </p>
-                        </div>
-                        <span class="badge tech-outline-badge text-wrap">Tech: HTML, CSS, JS, SQL, XAMPP</span>
